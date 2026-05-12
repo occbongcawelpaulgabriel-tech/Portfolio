@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  background:#000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin: 0 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.active {
+  background: #ff5a1f;
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.text span {
+  color: #ff5a1f;
+}
+
+.text h2 {
+  font-size: 40px;
+  margin: 10px 0 20px;
+  font-weight: normal;
+}
+
+.text p {
+  font-size: 30px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 30px;
+  margin-right: 300px;
+  height: 370px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 30px;
+    width: 250px;
+  }
+}
+
+/* <================= Resume ===========================> */
+
+.resume-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #ff5a1f;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: #ff5a1f;
+}
+
+.resume-btn:hover{
+  transform: translateX(10px);
+  
+}
+
+/* <============================== ABOUT SECTION =======================> */
+.about {
+  padding: 60px;
+  color: #ddd;
+}
+
+.about-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* IMAGE */
+.about-img img {
+  width: 260px;
+  border-radius: 30px;
+}
+
+/* TEXT */
+.about-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* DIVIDER */
+hr {
+  margin: 40px 0;
+  border: 0.5px solid #777;
+}
+
+/* WHY SECTION */
+.why h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.why p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+
+  .about-img img {
+    width: 200px;
+  }
+
+
+/* <================================= SKILLS SECTION ===========================> */
+.skills {
+  padding: 60px;
+  color: #ddd;
+}
+
+.skills-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* GROUP */
+.skills-group {
+  margin-top: 30px;
+}
+
+.skills-group h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* TEXT */
+.skills-group p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+/* DIVIDER */
+.skills hr {
+  margin: 40px 0;
+  border: 0.5px solid #777;
+}
+/* <============================== EXPERIENCE SECTION =============================> */
+.experience {
+  padding: 60px;
+  color: #ddd;
+}
+
+.exp-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ITEMS */
+.exp-item {
+  margin-top: 25px;
+  max-width: 800px;
+}
+
+.exp-item h3 {
+  font-size: 26px;
+  color: #fff;
+}
+
+.exp-item h4 {
+  font-size: 20px;
+  margin: 5px 0 10px;
+  color: #bbb;
+}
+
+.exp-item p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* INDENT SECOND JOB */
+.second {
+  margin-left: 140px;
+  margin-top: 30px;
+}
+
+/* DIVIDER */
+.experience hr {
+  margin: 40px 0;
+  border: 0.5px solid #777;
+}
+
+/* TOOLS */
+.tools h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.tools p {
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+/* <================================= CONTACT SECTION ===========================> */
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* BACKGROUND SHAPE */
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 200%;
+  background: linear-gradient(#ff5a1f, #a63d1a);
+  transform: rotate(25deg);
+  right: 48%;
+  top: -30%;
+  z-index: 0;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+/* FORM */
+.contact-form {
+  background: #888;
+  padding: 30px;
+  border-radius: 25px;
+  width: 300px;
+  z-index: 1;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-item img {
+  width: 30px;
+}
+
+.contact-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-info {
+  z-index: 1;
+}
+
+.info-box {
+  background: #ff5a1f;
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin: 15px 0;
+  width: 250px;
+}
+
+.info-box h3 {
+  margin-bottom: 5px;
+}
+
+.info-box p {
+  font-size: 14px;
+}
+/* <================================== PROJECT ==========================> */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.projects {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.projects h2 span {
+  color: #ff5a1f;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(180deg, #ff5b1fa9, #fc551913);
+  border-radius: 25px;
+  padding: 25px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(236, 124, 90, 0.4);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tag {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.tech {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+/* transition */
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #021a24;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+
+/* ACTIVE FADE */
+.fade.active {
+  opacity: 1;
+}
+
+body {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

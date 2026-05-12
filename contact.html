@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">My portfolio</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html"class="active">Contact</a>
+    </nav>
+  </header>
+
+    <section class="contact">
+
+  <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+
+  <input type="text" placeholder="Name" required>
+  
+  <input type="email" placeholder="Email" required>
+  
+  <textarea placeholder="Your message" required></textarea>
+  
+  <button type="submit" class="contact-button">Send message</button>
+  
+
+</form>
+
+  <div class="contact-img">
+    <img src="gab.jpg" alt="Profile">
+  </div>
+
+   <div class="info-box">
+      <div class="info-item">
+        <img src="fb-icon.png">
+        <span>Paul Gabriel Danuco Bongcawel</span>
+      </div>
+
+      <div class="info-item">
+        <img src="instagram.png">
+        <span>@kentoy.ss</span>
+      </div>
+
+      <div class="info-item">
+        <img src="phone.png">
+        <span>09100912367</span>
+      </div>
+
+      <div class="info-item">
+        <img src="gmail.png">
+        <span>occ.bongcawel.paul <br> gabriel @gmail.com</span>
+      </div>
+    </div>
+
+
+  </div>
+  
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
